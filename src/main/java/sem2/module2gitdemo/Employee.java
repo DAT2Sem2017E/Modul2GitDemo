@@ -7,122 +7,76 @@ package sem2.module2gitdemo;
  */
 class Employee {
 
+    private int employeeNumber;
+    private String lastName;
+    private String firstName;
+    private String extension;
+    private String email;
+    private int officeCode;
+    private int reportsTo;
+    private String jobTitleString; 
 
-    private int customerNumber;
-    private String customerName;
-    private String contactLastName;
-    private String contactFirstName;
-    private String phone;
-    private String addressLine1;
-    private String addressLine2;
-    private String city;
-    private String state;
-    private String postalCode;
-    private String country;
-    private int salesRepEmployeeNumber;
-    private String creditLimitString;
-
-    public int getCustomerNumber() {
-        return customerNumber;
+    public int getEmployeeNumber() {
+        return employeeNumber;
     }
 
-    public void setCustomerNumber( int customerNumber ) {
-        this.customerNumber = customerNumber;
+    public void setEmployeeNumber( int employeeNumber ) {
+        this.employeeNumber = employeeNumber;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setCustomerName( String customerName ) {
-        this.customerName = customerName;
+    public void setLastName( String lastName ) {
+        this.lastName = lastName;
     }
 
-    public String getContactLastName() {
-        return contactLastName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setContactLastName( String contactLastName ) {
-        this.contactLastName = contactLastName;
+    public void setFirstName( String firstName ) {
+        this.firstName = firstName;
     }
 
-    public String getContactFirstName() {
-        return contactFirstName;
+    public String getExtension() {
+        return extension;
     }
 
-    public void setContactFirstName( String contactFirstName ) {
-        this.contactFirstName = contactFirstName;
+    public void setExtension( String extension ) {
+        this.extension = extension;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPhone( String phone ) {
-        this.phone = phone;
+    public void setEmail( String email ) {
+        this.email = email;
     }
 
-    public String getAddressLine1() {
-        return addressLine1;
+    public int getOfficeCode() {
+        return officeCode;
     }
 
-    public void setAddressLine1( String addressLine1 ) {
-        this.addressLine1 = addressLine1;
+    public void setOfficeCode( int officeCode ) {
+        this.officeCode = officeCode;
     }
 
-    public String getAddressLine2() {
-        return addressLine2;
+    public int getReportsTo() {
+        return reportsTo;
     }
 
-    public void setAddressLine2( String addressLine2 ) {
-        this.addressLine2 = addressLine2;
+    public void setReportsTo( int reportsTo ) {
+        this.reportsTo = reportsTo;
     }
 
-    public String getCity() {
-        return city;
+    public String getJobTitleString() {
+        return jobTitleString;
     }
 
-    public void setCity( String city ) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState( String state ) {
-        this.state = state;
-    }
-
-    public String getPostalCode() {
-        return postalCode;
-    }
-
-    public void setPostalCode( String postalCode ) {
-        this.postalCode = postalCode;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry( String country ) {
-        this.country = country;
-    }
-
-    public int getSalesRepEmployeeNumber() {
-        return salesRepEmployeeNumber;
-    }
-
-    public void setSalesRepEmployeeNumber( int salesRepEmployeeNumber ) {
-        this.salesRepEmployeeNumber = salesRepEmployeeNumber;
-    }
-
-    public String getCreditLimitString() {
-        return creditLimitString;
-    }
-
-    public void setCreditLimitString( String creditLimitString ) {
-        this.creditLimitString = creditLimitString;
+    public void setJobTitleString( String jobTitleString ) {
+        this.jobTitleString = jobTitleString;
     }
 }
