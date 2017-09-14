@@ -1,5 +1,6 @@
 package sem2.module2gitdemo;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,11 @@ import java.util.List;
  */
 class LogicFacade {
 
-    static List<Employee> getEmployees() {
+    static List<Employee> getEmployees() throws SQLException, ClassNotFoundException {
+        return EmployeeDBMapper.getEmployees();
+    }
+    
+    static List<Employee> getEmployees_2() {
         List<Employee> empls = new ArrayList<>();
         Employee empl = new Employee();
         empl.setEmail( "hans@classicmodels.com");
