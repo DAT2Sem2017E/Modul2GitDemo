@@ -5,7 +5,7 @@ package sem2.module2gitdemo;
 
  @author kasper
  */
-class Employee {
+public class Employee {
 
     private int employeeNumber;
     private String lastName;
@@ -13,6 +13,7 @@ class Employee {
     private String extension;
     private String email;
     private int officeCode;
+    private String officeName;
     private int reportsTo;
     private String jobTitleString; 
 
@@ -78,5 +79,13 @@ class Employee {
 
     public void setJobTitleString( String jobTitleString ) {
         this.jobTitleString = jobTitleString;
+    }
+
+    public String getOfficeName() {
+        return officeName;
+    }
+
+    public void setOfficeName( String officeName ) {
+        this.officeName = officeName;
     }
 }

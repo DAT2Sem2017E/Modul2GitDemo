@@ -25,8 +25,12 @@ public class ShowEmployees extends HttpServlet {
             throws ServletException, IOException {
         
         response.setContentType( "text/html;charset=UTF-8" );
-        
-        List<Employee> emplyees = LogicFacade.getEmployees();
+        // Get the employees and pass them on the jsp page
+        List<Employee> emplyoees = LogicFacade.getEmployees();
+        request.setAttribute( "employees", emplyoees);
+        String nextURL = "/listEmployees.jsp";
+        request.getRequestDispatcher(nextURL)
+                .forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
