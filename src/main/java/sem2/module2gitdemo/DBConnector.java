@@ -13,6 +13,7 @@ public class DBConnector {
 
     private static String url = "jdbc:mysql://46.101.253.149:3306/classicmodels";
     private static String username = "officelister2";
+
     private static String password = "bank3*andyouarein";
 
     public static Connection connection() throws ClassNotFoundException, SQLException {
