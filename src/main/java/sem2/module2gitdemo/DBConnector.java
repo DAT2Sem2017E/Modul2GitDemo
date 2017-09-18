@@ -12,9 +12,9 @@ import java.sql.SQLException;
 public class DBConnector {
 
     private static String url = "jdbc:mysql://46.101.253.149:3306/classicmodels";
-    private static String username = "officelister2";
-
-    private static String password = "bank3*andyouarein";
+    private static String username = "officelister12";
+    private static String password = "dumtpasswordsomeraltforlangttilatmangiveratskrivedetrettit";
+    //private static String password = "bank3*andyouarein";
 
     public static Connection connection() throws ClassNotFoundException, SQLException {
             Class.forName("com.mysql.jdbc.Driver");
