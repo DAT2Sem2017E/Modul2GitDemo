@@ -9,6 +9,9 @@ import java.util.List;
 public class RenderUtil {
 
     public static String employeeTable(List<Employee> empls){
+        if (empls == null) {
+            return "No one employed";
+        }
         StringBuilder sb = new StringBuilder();
         sb.append( "<table>\n"
         + "<tr><th>Fornavn</th><th>Efternavn</th><th>email</th><th>kontor</th></tr>\n");
